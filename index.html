@@ -3,12 +3,75 @@
 
 <head>
     <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="stylesheet" href="./superslides.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-    <div class="container">
-        <h1>Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.</h1>
+    <div id="slides">
+
+        <div class="overlay"></div>
+
+        <div class="slides-container">
+            <img src="./slide1.jpg" alt="">
+            <img src="./slide2.jpg" alt="">
+            <img src="./slide3.jpg" alt="">
+            <img src="./slide4.jpg" alt="">
+        </div>
+
+        <div class="titleMessage">
+            <div class="heading">
+                <p class="main">DYLAN MORISON</p>
+                <p class="sub typed"></p>
+            </div>
+
+        </div>
+
+        <nav class="slides-navigation">
+            <a href="#" class="next" id="nextInstance"></a>
+            <a href="#" class="prev" id="prevInstance"></a>
+        </nav>
     </div>
+
+    <div id="about" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <img class="aboutImage" src="./dylan.png" alt="">
+                </div>
+                <div class="col-md-7">
+
+                    <h4>My name is Dylan Morison</h4>
+                    <p>I am an aspiring web developer who loves working on anything web related, from database
+                        management to React components. I started out web development using python and Django, but
+                        quickly fell in love with <strong>javascript</strong>. With this realization I began learning
+                        MERN stack devleopment. Today I hope to land any job that allows me to use and expand my MERN
+                        stack skill set. Above all, I want to create useful products that people not only benefit from,
+                        but also enjoy using. </p>
+                    <p>Aside from my interest in software development, I am a life long tennis player and enthustiastic
+                        gamer. When I'm not coding you can find my playing tennis, working out, or playing the latest
+                        Call of Duty. </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./jquery.superslides.min.js"></script>
+    <script src="./index.js"></script>
+    <script src="./typed.min.js"></script>
+
 </body>
 
 
