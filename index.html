@@ -20,6 +20,12 @@
 </head>
 
 <body>
+
+    <div class="loader">
+        <div class="inner">
+        </div>
+    </div>
+
     <div id="slides">
 
         <div class="overlay"></div>
@@ -45,6 +51,33 @@
         </nav>
     </div>
 
+    <nav id="navigation" class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">Dylan Morison</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><img src="./menu.png" class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#stats">Stats</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
     <div id="about" class="section">
         <div class="container">
             <div class="row">
@@ -53,16 +86,19 @@
                 </div>
                 <div class="col-md-7">
 
-                    <h4>My name is Dylan Morison</h4>
+                    <h4>Hi! My name is Dylan Morison</h4>
                     <p>I am an aspiring web developer who loves working on anything web related, from database
                         management to React components. I started out web development using python and Django, but
-                        quickly fell in love with <strong>javascript</strong>. With this realization I began learning
-                        MERN stack devleopment. Today I hope to land any job that allows me to use and expand my MERN
-                        stack skill set. Above all, I want to create useful products that people not only benefit from,
-                        but also enjoy using. </p>
+                        quickly switched over to <strong>javascript</strong>. After recieving helpful advice from one of
+                        my college professors at <i>Occidental College</i> I began learning and specializing in
+                        MERN stack web devleopment. Today I hope to land any job that allows me to use and expand my
+                        MERN
+                        stack skill set, or simply expand my knowledge of computer science. Above all, I want to create
+                        useful products that people benefit from
+                        and enjoy using. </p>
                     <p>Aside from my interest in software development, I am a life long tennis player and enthustiastic
                         gamer. When I'm not coding you can find my playing tennis, working out, or playing the latest
-                        Call of Duty. </p>
+                        Call of Duty with my friends. </p>
 
                 </div>
             </div>
@@ -75,6 +111,7 @@
                 <div class="col-md-12 text-center skillsTitle">
                     <h2>TECHNICAL SKILLS</h2>
                     <p>A representation of proficiency in each skill!</p>
+                    <p>(Click & Drag)</p>
                 </div>
 
                 <div class="owl-carousel owl-theme">
@@ -219,10 +256,11 @@
             <p class="subHeading">Need an entry level software developer?</p>
             <h2>I'd love to hear from you!</h2>
             <a href="mailTo:dylan@g.morison.org" class="contactButton">GET IN TOUCH</a>
+
         </div>
     </div>
 
-    <div id="about" class="section">
+    <div id="portfolio" class="section">
         <div class="container">
             <div class="row">
                 <div class="heading">
@@ -239,21 +277,90 @@
                 </div>
                 <div class="itemsContainer">
                     <ul class="items">
-                        <li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3"></li>
-                        <div class="item">
-                            <img src="./smiley.jpg" alt="">
-                            <div class="icons">
-                                <a href="./smiley.jpg" title="View Image" class="openButton">
-                                    <i class="fa fa-search"></i>
-                                </a>
-                                <a href="" target="_blank" class="projectLink">
-                                    <i class="fa fa-link"></i>
-                                </a>
+                        <li onclick="" class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="./home.png" alt="">
+                                <div class="icons">
+                                    <a href="./home.png" title="View Image" class="openButton" data-fancybox
+                                        data-caption="This is a temp pic">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                    <a href="https://time-tracker-for-students.herokuapp.com/" target="_blank"
+                                        class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+                                <div class="imageOverlay"></div>
+
                             </div>
-                        </div>
+                        </li>
+                        <li onclick="" class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="./activities.png" alt="">
+                                <div class="icons">
+                                    <a href="./activities.png" title="View Image" class="openButton" data-fancybox
+                                        data-caption="This is a temp pic">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                    <a href="https://time-tracker-for-students.herokuapp.com/" target="_blank"
+                                        class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+                                <div class="imageOverlay"></div>
+
+                            </div>
+                        </li>
+                        <li onclick="" class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="./chat_app.png" alt="">
+                                <div class="icons">
+                                    <a href="./chat_app.png" title="View Image" class="openButton" data-fancybox
+                                        data-caption="This is a temp pic">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                    <a href="https://chat-app-tutorial-111.herokuapp.com/" target="_blank"
+                                        class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+                                <div class="imageOverlay"></div>
+
+                            </div>
+                        </li>
+                        <li onclick="" class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="item">
+                                <img src="./react_portfolio.png" alt="">
+                                <div class="icons">
+                                    <a href="./react_portfolio.png" title="View Image" class="openButton" data-fancybox
+                                        data-caption="This is a temp pic">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                    <a href="https://dylan-morison-portfolio.herokuapp.com/" target="_blank"
+                                        class="projectLink">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+                                </div>
+                                <div class="imageOverlay"></div>
+
+                            </div>
+                        </li>
+
                     </ul>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="copyrightSection">
+        <div class="col-md-12 text-center">
+            <p>&copy; Copyright Dylan Morison 2020 <a href="https://www.linkedin.com/in/dylan-morison-5b5b49132/"
+                    class="socialTags" target="_blank"><i style="font-size:24px" class="fa">&#xf08c;</i></a>
+                <a href="https://github.com/DylanMorison" class="socialTags" target="_blank"><i style="font-size:24px"
+                        class="fa">&#xf09b;</i>
+                </a>
+            </p>
+
         </div>
     </div>
 
